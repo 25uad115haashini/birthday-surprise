@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Surprise ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BIRTHDAY OPENING
+    ========================== -->
+
+    <section class="birthday-opening" id="birthdayOpening">
+
+        <div class="firework f1"></div>
+        <div class="firework f2"></div>
+        <div class="firework f3"></div>
+        <div class="firework f4"></div>
+        <div class="firework f5"></div>
+
+        <div class="opening-content">
+
+            <div class="cake">🎂</div>
+
+            <p class="opening-small">
+                TODAY IS ALL ABOUT YOU ✨
+            </p>
+
+            <h1>
+                HAPPY<br>
+                BIRTHDAY
+            </h1>
+
+            <h2>
+                My Love ❤️
+            </h2>
+
+            <p class="opening-message">
+                A little surprise,<br>
+                made only for you...
+            </p>
+
+            <button onclick="startSurprise()">
+                Tap to Begin ♡
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FLOATING HEARTS
+    ========================== -->
+
+    <div class="hearts">
+
+        <span class="heart h1">♥️</span>
+        <span class="heart h2">♥️</span>
+        <span class="heart h3">♥️</span>
+        <span class="heart h4">♥️</span>
+        <span class="heart h5">♥️</span>
+        <span class="heart h6">♥️</span>
+        <span class="heart h7">♥️</span>
+        <span class="heart h8">♥️</span>
+        <span class="heart h9">♥️</span>
+        <span class="heart h10">♥️</span>
+
+    </div>
+
+
+    <!-- =========================
+         GLOWING PARTICLES
+    ========================== -->
+
+    <div class="particles">
+
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+
+    </div>
+
+
+    <!-- =========================
+         PASSWORD SCREEN
+    ========================== -->
+
+    <main class="login-screen">
+
+        <div class="glass-card">
+
+            <div class="small-heart">
+                ♡
+            </div>
+
+            <p class="little-text">
+                A LITTLE SURPRISE FOR YOU
+            </p>
+
+            <h1>
+                Hey You... ❤️
+            </h1>
+
+            <p class="message">
+                I made something special<br>
+                just for you.
+            </p>
+
+            <div class="lock">
+                🔐
+            </div>
+
+            <label for="password">
+                LOVE PASSWORD
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                maxlength="4"
+                placeholder="• • • •"
+            >
+
+            <button onclick="unlock()">
+                Unlock My Surprise
+                <span>♡</span>
+            </button>
+
+            <p id="error"></p>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         BIRTHDAY REVEAL
+    ========================== -->
+
+    <section class="birthday-screen" id="birthdayScreen">
+
+        <div class="birthday-card">
+
+            <div class="big-heart">
+                ♥️
+            </div>
+
+            <p class="welcome">
+                YOU UNLOCKED IT ✨
+            </p>
+
+            <h2>
+                Happy Birthday,<br>
+                My Love ❤️
+            </h2>
+
+            <p>
+                This little world was made<br>
+                only for you...
+            </p>
+
+            <button onclick="continueStory()">
+                Enter My Surprise ♡
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         OUR STORY
+    ========================== -->
+
+    <section class="story-screen" id="storyScreen">
+
+    <div class="story-card">
+
+        <div class="story-icon">
+            💌
+        </div>
+
+        <p class="story-small">
+            OUR STORY ❤️
+        </p>
+
+        <h2>
+            Where It All<br>
+            Began
+        </h2>
+
+        <p>
+            Every love story has a beginning...
+            and ours is one of my favourite stories.
+        </p>
+
+        <div class="story-line">
+            <span></span>
+            <span>♡</span>
+            <span></span>
+        </div>
+
+        <button onclick="openFirstMemory()">
+            Our First Memory ♡
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- =========================
+         MEMORIES
+    ========================== -->
+
+    <section class="memories-screen" id="memoriesScreen">
+
+        <div class="memories-card">
+
+            <p class="memories-small">
+                OUR MEMORIES ✨
+            </p>
+
+            <h2>
+                Little Moments,<br>
+                Big Memories ❤️
+            </h2>
+
+            <p class="memories-text">
+                Every picture has a story,
+                and every story has you.
+            </p>
+
+            <div class="photo-grid">
+
+                <div class="photo-box">
+                    <span>📸</span>
+                    <p>Our Moment</p>
+                </div>
+
+                <div class="photo-box">
+                    <span>💕</span>
+                    <p>My Favourite</p>
+                </div>
+
+                <div class="photo-box">
+                    <span>✨</span>
+                    <p>Sweet Memory</p>
+                </div>
+
+                <div class="photo-box">
+                    <span>🥰</span>
+                    <p>Us</p>
+                </div>
+
+            </div>
+
+            <button onclick="openVideo()">
+                Next Memory ♡
+            </button>
+
+        </div>
+
+    </section>
+<!-- =========================
+     FIRST MEMORY
+========================= -->
+
+<section class="memory-screen" id="firstMemoryScreen">
+    <div class="memory-card">
+        <p class="memory-small">THE BEGINNING ❤️</p>
+
+        <h2>Where Our Story<br>Really Started ❤️</h2>
+
+        <p class="memory-text">
+            I still remember the little moments
+            that slowly brought us closer...
+            <br><br>
+            I didn't know then that you would
+            become such a special part of my life. ❤️
+        </p>
+
+        <div class="memory-message">
+            <span>💌</span>
+            <p>
+                Some beginnings may look ordinary...
+                but ours became my favourite story.
+            </p>
+        </div>
+
+        <button onclick="openFirstKiss()">Next Memory ♡</button>
+    </div>
+</section>
+<!-- =========================
+     FIRST KISS
+========================= -->
+
+<section class="kiss-screen" id="firstKissScreen">
+    <div class="kiss-card">
+
+        <p class="kiss-small">A MEMORY CLOSE TO MY HEART 💕</p>
+
+        <h2>Some Moments<br>Stay Forever ❤️</h2>
+
+        <div class="secret-memory">
+            <span>💕</span>
+            <p>One little moment...</p>
+        </div>
+
+        <p class="kiss-text">
+            Out of all the moments we've shared,
+            there is one that will always have
+            a special place in my heart.
+            <br><br>
+            Maybe it was just a moment...
+            but for me, it became a beautiful memory
+            that I'll always carry with me. ❤️
+        </p>
+
+        <button onclick="openKissVideo()">One More Memory ♡</button>
+
+    </div>
+</section>
+<!-- =========================
+     FAVOURITE MOMENT
+========================= -->
+
+<section class="kiss-video-screen" id="kissVideoScreen">
+
+    <div class="kiss-video-card">
+
+        <p class="kiss-video-small">
+            MY FAVOURITE MOMENT 🎥
+        </p>
+
+        <h2>
+            A Little Moment<br>
+            With You ❤️
+        </h2>
+
+        <div class="video-placeholder">
+    <span>💖</span>
+    <p>Every moment with you is my favourite.</p>
+</div>
+
+        <p class="kiss-video-text">
+            Some moments are too special
+            to be forgotten...
+        </p>
+
+        <button onclick="openMovieMemory()">
+            Next Memory ♡
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     A DAY TO REMEMBER
+========================= -->
+
+<section class="day-screen" id="dayScreen">
+
+    <div class="day-card">
+
+        <p class="day-small">
+            A DAY TO REMEMBER 🎬💕
+        </p>
+
+        <h2>
+            One Of My Favourite<br>
+            Days With You ❤️
+        </h2>
+
+        <div class="day-placeholder">
+    <span>✨</span>
+    <p>Some days become memories we carry forever. ❤️</p>
+</div>
+
+        <p class="day-text">
+            It wasn't just a day...
+            it became one of those memories
+            I never want to forget. ❤️
+        </p>
+
+        <button onclick="openThingsILove()">
+            A Little More Of Us ♡
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     THINGS I LOVE ABOUT YOU
+========================= -->
+
+<section class="love-screen" id="loveScreen">
+
+    <div class="love-card">
+
+        <p class="love-small">
+            JUST FOR YOU ❤️
+        </p>
+
+        <h2>
+            Things I Love<br>
+            About You
+        </h2>
+
+        <div class="love-list">
+
+            <div class="love-item">
+                <span>♡</span>
+                <p>Your smile</p>
+            </div>
+
+            <div class="love-item">
+                <span>♡</span>
+                <p>The way you care</p>
+            </div>
+
+            <div class="love-item">
+                <span>♡</span>
+                <p>Your little habits</p>
+            </div>
+
+            <div class="love-item">
+                <span>♡</span>
+                <p>The way you make me happy</p>
+            </div>
+
+            <div class="love-item">
+                <span>♡</span>
+                <p>Simply... you ❤️</p>
+            </div>
+
+        </div>
+
+        <button onclick="openLetter()">
+            Something From My Heart ♡
+        </button>
+
+    </div>
+
+</section>
+<!-- =========================
+     PERSONAL LETTER
+========================= -->
+
+<section class="letter-screen" id="letterScreen">
+
+    <div class="letter-card">
+
+        <div class="letter-heart">
+            💌
+        </div>
+
+        <p class="letter-small">
+            A LETTER FROM MY HEART ❤️
+        </p>
+
+        <h2>
+            To My Favourite Person
+        </h2>
+
+        <div class="letter-content">
+
+            <p>
+                Happy Birthday, my love. ❤️
+            </p>
+
+            <p>
+                I don't know if words can ever explain
+                how much you mean to me...
+            </p>
+
+            <p>
+                Thank you for being a beautiful part
+                of my life and for making ordinary
+                moments feel so special.
+            </p>
+
+            <p>
+                I hope this new year of your life
+                brings you everything your heart wishes for.
+            </p>
+
+            <p>
+                No matter how many memories we make,
+                I hope there are always many more
+                waiting for us. ❤️
+            </p>
+
+            <p class="letter-ending">
+                With all my love,<br>
+                Yours forever ♡
+            </p>
+
+        </div>
+
+        <button onclick="openFinalSurprise()">
+            One Last Surprise ♡
+        </button>
+
+    </div>
+
+</section>
+<!-- =========================
+     FINAL SURPRISE
+========================= -->
+
+<section class="final-screen" id="finalScreen">
+
+    <div class="final-card">
+
+        <div class="final-sparkle">
+            ✨
+        </div>
+
+        <p class="final-small">
+            ONE LAST THING ❤️
+        </p>
+
+        <h2>
+            You Are My<br>
+            Favourite Part Of Life
+        </h2>
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+        <p class="final-message">
+            If I could give you one thing
+            for your birthday, it would be
+            the ability to see yourself
+            through my eyes...
+        </p>
+
+        <p class="final-message">
+            Then you would know just how
+            special you really are to me. ❤️
+        </p>
+
+        <div class="final-line">
+            ───── ♡ ─────
+        </div>
+
+        <h3>
+            Happy Birthday, My Love ❤️
+        </h3>
+
+        <p class="forever">
+            Here's to us, and to all the memories
+            still waiting for us. ✨
+        </p>
+
+    </div>
+
+</section>
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        /* Opening → Password */
+
+        function startSurprise() {
+
+            document
+                .getElementById("birthdayOpening")
+                .classList.add("hide");
+
+        }
+
+
+        /* Password Unlock */
+
+        function unlock() {
+
+            const password =
+                document.getElementById("password").value;
+
+            const error =
+                document.getElementById("error");
+
+            if (password === "0128") {
+
+                error.innerHTML =
+                    "Welcome, my love... ❤️";
+
+                error.className = "success";
+
+                setTimeout(() => {
+
+                    document
+                        .querySelector(".login-screen")
+                        .classList.add("hide");
+
+                    document
+                        .getElementById("birthdayScreen")
+                        .classList.add("show");
+
+                }, 700);
+
+            } else {
+
+                error.innerHTML =
+                    "Hmm... try our secret password 🥺❤️";
+
+                error.className = "wrong";
+
+            }
+
+        }
+
+
+        /* Birthday → Story */
+
+        function continueStory() {
+
+            document
+                .getElementById("birthdayScreen")
+                .classList.remove("show");
+
+            document
+                .getElementById("storyScreen")
+                .classList.add("show");
+
+        }
+
+
+        /* Story → Memories */
+
+        function openMemories() {
+
+            document
+                .getElementById("storyScreen")
+                .classList.remove("show");
+
+            document
+                .getElementById("memoriesScreen")
+                .classList.add("show");
+
+        }
+function openFirstMemory() {
+
+    document
+        .getElementById("storyScreen")
+        .classList.remove("show");
+
+    document
+        .getElementById("firstMemoryScreen")
+        .classList.add("show");
+
+}
+function openFirstKiss() {
+
+    document
+        .getElementById("firstMemoryScreen")
+        .classList.remove("show");
+
+    document
+        .getElementById("firstKissScreen")
+        .classList.add("show");
+
+}
+function openKissVideo() {
+
+    document
+        .getElementById("firstKissScreen")
+        .classList.remove("show");
+
+    document
+        .getElementById("kissVideoScreen")
+        .classList.add("show");
+
+}
+        /* Memories → Video */
+
+        function openVideo() {
+
+            alert("Our video memories are coming next... 🎥❤️");
+
+        }
+function openMovieMemory() {
+
+    document
+        .getElementById("kissVideoScreen")
+        .classList.remove("show");
+
+    document
+        .getElementById("dayScreen")
+        .classList.add("show");
+
+}
+function openThingsILove() {
+
+    document
+        .getElementById("dayScreen")
+        .classList.remove("show");
+
+    document
+        .getElementById("loveScreen")
+        .classList.add("show");
+
+}
+function openLetter() {
+
+    document
+        .getElementById("loveScreen")
+        .classList.remove("show");
+
+    document
+        .getElementById("letterScreen")
+        .classList.add("show");
+
+}
+function openFinalSurprise() {
+
+    document
+        .getElementById("letterScreen")
+        .classList.remove("show");
+
+    document
+        .getElementById("finalScreen")
+        .classList.add("show");
+
+}
+    </script>
+
+</body>
+</html>
